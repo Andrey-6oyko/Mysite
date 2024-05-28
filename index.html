@@ -17,6 +17,7 @@
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="stylesheet" href="styless/style_header.css">
     <link rel="stylesheet" href="styless/style_main.css">
+    <link rel="stylesheet" href="styless/style_footer.css">
     <title>MainPage</title>
 </head>
 
@@ -1148,10 +1149,110 @@
                                 <div class="bottom_line"></div>
                             </div>
                             <div class="num_per_com">
-                                
+                                <img src="images/person_icon.png" alt="">
+                                <p>John Doe</p>
+                            </div>
+                            <div class="num_per_com">
+                                <img src="images/message.png" alt="">
+                                <p>9 Comments</p>
+                            </div>
+                            <h2>Things to Know When Choosing the Perfect Sofa</h2>
+                            <div class="btn_sec4">
+                                <hr class="BtnTop">
+                                <a href="">See More Product</a>
+                                <hr class="BtnBot">
+                                <hr class="BtnLeft">
+                                <hr class="BtnRight">
                             </div>
                         </div>
                     </div>
+                    <div class="article">
+                        <img src="images/Article2.png" alt="">
+                        <div class="article_info">
+                            <div class="date">
+                                <h2>23</h2>
+                                <p>Jun</p>
+                                <div class="bottom_line"></div>
+                            </div>
+                            <div class="num_per_com">
+                                <img src="images/person_icon.png" alt="">
+                                <p>John Doe</p>
+                            </div>
+                            <div class="num_per_com">
+                                <img src="images/message.png" alt="">
+                                <p>3 Comments</p>
+                            </div>
+                            <h2>Things to Know When Choosing the Perfect Sofa</h2>
+                            <div class="btn_sec4">
+                                <hr class="BtnTop">
+                                <a href="">See More Product</a>
+                                <hr class="BtnBot">
+                                <hr class="BtnLeft">
+                                <hr class="BtnRight">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="article">
+                        <img src="images/Article3.png" alt="">
+                        <div class="article_info">
+                            <div class="date">
+                                <h2>15</h2>
+                                <p>May</p>
+                                <div class="bottom_line"></div>
+                            </div>
+                            <div class="num_per_com">
+                                <img src="images/person_icon.png" alt="">
+                                <p>John Doe</p>
+                            </div>
+                            <div class="num_per_com">
+                                <img src="images/message.png" alt="">
+                                <p>6 Comments</p>
+                            </div>
+                            <h2>Things to Know When Choosing the Perfect Sofa</h2>
+                            <div class="btn_sec4">
+                                <hr class="BtnTop">
+                                <a href="">See More Product</a>
+                                <hr class="BtnBot">
+                                <hr class="BtnLeft">
+                                <hr class="BtnRight">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                        <div class="action">
+                                <img src="images/Freeshiping.png" alt="">
+                        </div>
+                        <div class="action_text">
+                            <h3>Free Shipping</h3>
+                            <p>Capped at $319 per order</p>
+                        </div>
+                        <hr class="action_hr">
+                        <div class="action">
+                                <img src="images/Freereturn.png" alt="">
+                        </div>
+                        <div class="action_text">
+                            <h3>Free Return</h3>
+                            <p>Within 25 Days</p>
+                        </div>
+                        <hr class="action_hr">
+                        <div class="action">
+                          
+                                <img src="images/100%secure.png" alt="">
+                        
+                        </div>
+                        <div class="action_text">
+                            <h3>100% Secure</h3>
+                            <p>100% Secure payment</p>
+                        </div>
+                        <hr class="action_hr">
+                        <div class="action">
+                                <img src="images/BestPrice.png" alt="">
+                        </div>
+                        <div class="action_text">
+                            <h3>Best Price</h3>
+                            <p>Guaranteed Gifts</p>
+                        </div>
                 </div>
         </section>
 
@@ -1159,12 +1260,54 @@
 
 
 
-    <footer>
+    
+        <section>
+            <div class="form_footer">
+                <div>
+                    <div class="logo_name">
+                        <img src="images/logo.png" alt="">
+                        <p class="int_p">interior</p>
+                    </div>
+                </div>
+                <form id="order_form" action="orders_ajax.php" method="post" class="form_order">
+                    <input type="text" id="name" name="name" required placeholder="Name"><br>
+
+                    <input type="text" id="name" name="surname" required placeholder="Surname"><br>
+
+                    <input type="email" id="email" name="email" required placeholder="mail"><br>
+                    
+                    <input type="tel" id="phone" name="phone" required placeholder="phone number"><br>
+                    
+                    <input type="tel" id="adress" name="adress" required placeholder="adress"><br>
+
+                    <input type="text" id="product" name="product" required placeholder="product"><br>
+                    
+                    <input type="number" id="quantity" name="quantity" min="1" required placeholder="quantity"><br><br>
+                    
+                    <input type="submit" value="Make an order">
+                </form>
+                <p id="successMessage" style="display: none;  color: rgb(230, 229, 201);">Ваше замовлення було успішно відправлено!</p>
+            </div>
+            <div class="foot">
+                <h2>Copyright 2022 - Designed & Developed by Frenify</h2>
+                <div class="contacts">
+                    <a href="#">
+                     <img src="images/facebook.png" alt="">
+                    </a>
+                    <a href="#">
+                     <img src="images/inst.png" alt="">
+                    </a>
+                    <a href="#">
+                     <img src="images/int.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
 
 
-    </footer>
-
-
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       
+<script src="js/main.js"></script>
 </body>
 
 </html>

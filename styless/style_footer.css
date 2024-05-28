@@ -1,0 +1,70 @@
+.logo_name{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_name>img{
+    margin-top: 10px;
+    height: 70px;
+}
+
+.int_p{
+    color: #555555;
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+
+.form_footer{
+    margin-top: 200px;
+    height: 441px;
+    background-color: #DDD7D1;
+    border-radius: 100% 100% 0% 0%;
+}
+
+.form_order {
+    width: 400px; /* Ширина форми */
+    margin: 0 auto; /* Автоматичний відступ зверху і знизу, але автоматично вирівнює форму по центру */
+    text-align: center; /* Вирівнює текст внутрішніх елементів по центру */
+}
+
+/* Додатковий стиль для елементів у формі, якщо потрібно */
+.form_order input {
+    display: inline-block; /* Кожен елемент розміщується у своєму рядку */
+    margin-bottom: 10px; /* Відступ між елементами */
+    width: 100%; /* Розширення елементів на всю ширину форми */
+}
+
+
+
+.foot{
+    padding-top: 10px;
+    height: 40px;
+
+}
+
+.foot>h2{  
+    display: inline-block;
+    margin-left: 165px;
+    color: #424242;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.contacts{
+    display: inline-block;
+    margin-left: 708px;
+}
+
+.contacts>a{
+    margin-right: 21px;
+    text-decoration: none;
+}
