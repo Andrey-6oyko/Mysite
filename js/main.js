@@ -10,7 +10,7 @@ document.getElementById('order_form').addEventListener('submit', function(event)
         
         // Send the form data using fetch
         fetch('orders_ajax.php', {
-            method: 'POST',
+            method: 'POST', 
             
             body: formData
         })
@@ -27,3 +27,13 @@ document.getElementById('order_form').addEventListener('submit', function(event)
         form.reportValidity();
     }
 });
+
+
+
+    // JavaScript for burger menu toggle
+console.log(jQuery().jquery);
+$(document).on('click', '#burger', function(){
+    $('.nav-menu').toggleClass('active');
+})
+
+    

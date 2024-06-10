@@ -1,0 +1,55 @@
+body {
+    background-color: #E1DEDE;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cec7c1;
+    color: #555555;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 400;
+     font-size: 16px;
+     font-family: "Oswald", sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1B1A1A;
+    font-weight: 300;
+    font-size: 16px;
+    transition: color 0.2s linear;
+}
+
+
+nav ul li.active a {
+    color: rgb(124, 27, 46); /* Колір активного пункту меню */
+}
+nav ul li a:hover{
+    color: crimson;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#about {
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+}
+

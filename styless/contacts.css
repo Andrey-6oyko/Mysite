@@ -1,0 +1,44 @@
+.orders_form_foot{
+    width: auto;
+    margin-top: 140px; /* Застосовуємо негативний вертикальний відступ */
+    height: 460px;
+    background-color: #DDD7D1;
+    border-radius: 100% 100% 0% 0%;
+}
+
+.form_ord_name{
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.form_order input[type="text"],
+.form_order input[type="email"],
+.form_order input[type="tel"],
+.form_order input[type="number"],
+.form_order textarea {
+    height: 20px; /* Змінюємо висоту полів на 30px */
+    margin-bottom: 10px; /* Змінюємо відступ між полями */
+}
+
+.navbar {
+    background-color: #cec7c1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cec7c1; /* Це змінить колір тексту пунктів меню на білий */
+}
+
+.navbar-brand{
+    color: #111111;
+}
+
+.navbar-brand:hover{
+    color: crimson;
+}
+
+.foot{
+   margin-left: 685px;
+}
+

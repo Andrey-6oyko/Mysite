@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product = $_POST['product'];
     $quantity = $_POST['quantity'];
     
+    // Захист від XSS атак
     $name = htmlspecialchars($name); 
     $surname = htmlspecialchars($surname); 
     $email = htmlspecialchars($email); 
@@ -14,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product = htmlspecialchars($product);
     $quantity = htmlspecialchars($quantity);
 
+    // Декодування URL
     $name = urldecode($name); 
     $surname = urldecode($surname); 
     $email = urldecode($email); 
@@ -21,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product = urldecode($product);
     $quantity = urldecode($quantity);
 
+    // Видалення пробілів
     $name = trim($name); 
     $surname = trim($surname); 
     $email = trim($email); 
@@ -28,19 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product = trim($product);
     $quantity = trim($quantity);
 
-
-    // Збереження даних до бази даних або обробка замовлення
-    // Приклад збереження у файл (для простоти)
-    $orderData = "Ім'я: $name\nПрізвище: $surname\nmail: $email\nАдреса: $adress\nТовар: $product\nКількість: $quantity\n\n";
-    file_put_contents('datastorage\user_orders.ser', $orderData, FILE_APPEND);
-    
-  // Збереження даних у файл
-  $file = 'datastorage\user_orders.ser';
-  if (file_put_contents($file, $orderData, FILE_APPEND | LOCK_EX)) {
-      echo 'success';
-  } else {
-      echo 'error';
-  }
+    // Збереження даних до файлу з коректним роздільником
+    $orderData = "$name|$surname|$email|$adress|$product|$quantity\n";
+    $file = 'datastorage/user_orders.ser';
+    if (file_put_contents($file, $orderData, FILE_APPEND | LOCK_EX)) {
+        echo 'success';
+    } else {
+        echo 'error';
+    }
 } else {
-  echo 'error';
+    echo 'error';
 }

@@ -29,17 +29,22 @@
                     <img src="images/logo.png" width="32px" alt="">
                     <p class="logo_text">interior</p>
                 </div>
-                <div class="nav_list">
-                    <a class="nav_item nav_home" href="#">Home</a>
-                    <a class="nav_item" href="#">Pages</a>
-                    <a class="nav_item" href="#">Services</a>
-                    <a class="nav_item" href="#">Blog</a>
-                    <a class="nav_item" href="#">Contact Us</a>
+                <div class="nav-menu ">
+                    <div id="burger">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <ul class="menu">
+                        <li><a class="nav_item nav_home" href="index.html">Home</a></li>
+                        <li><a class="nav_item" href="Aboutus.html">About us</a></li>
+                        <li><a class="nav_item" href="login.php">Log in</a></li>
+                        <li><a class="nav_item" href="contacts.html">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="search">
-                    <a href="#">
-                        <img src="images/search.png" alt="">
-                    </a>
+                    <form action="#" method="GET">
+                        <input type="text" name="search" placeholder="Search...">
+                        <img src="images/search.png" alt="Search">
+                    </form>
                 </div>
                 <div>
                     <a href="#">
@@ -71,51 +76,64 @@
 
 
     <main>
-        <section class="sec1">
-            <div class="slideshow_container">
-                <div class="block_card">
-                    <h2>New Chair Collection 2022</h2>
-                    <div class="card_btn">
-                        <hr class="Tophr_card">
-                        <a href="#">SHOP NOW</a>
-                        <hr class="bottomhr_card">
-                        <hr class="Lefthr_card">
-                        <hr class="righthr_card">
-                    </div>
-                    <div class="card_img">
-                        <img src="images/image-asset-removebg-preview 1.png" alt="Крісло">
-                    </div>
+    <section class="sec1">
+        <div class="slideshow_container">
+            <div class="block_card">
+                <h2>New Chair Collection 2022</h2>
+                <div class="card_btn">
+                    <hr class="Tophr_card">
+                    <a href="#">SHOP NOW</a>
+                    <hr class="bottomhr_card">
+                    <hr class="Lefthr_card">
+                    <hr class="righthr_card">
                 </div>
-                <div class="block_card block_card2">
-                    <h2>Lamp Desk</h2>
-                    <div class="card_btn">
-                        <hr class="Tophr_card">
-                        <a href="#">SHOP NOW</a>
-                        <hr class="bottomhr_card">
-                        <hr class="Lefthr_card">
-                        <hr class="righthr_card">
-                    </div>
-                    <div class="card_img card_desk">
-                        <img src="images/desk-lamp-marble-table 1.png" alt="Крісло">
-                    </div>
+                <div class="card_img">
+                    <img src="images/image-asset-removebg-preview 1.png" alt="Крісло">
                 </div>
-                <div class="block_card">
-                    <h2>Modern Chair Collection 2022</h2>
-                    <div class="card_btn">
-                        <hr class="Tophr_card">
-                        <a href="#">SHOP NOW</a>
-                        <hr class="bottomhr_card">
-                        <hr class="Lefthr_card">
-                        <hr class="righthr_card">
-                    </div>
-                    <div class="card_img">
-                        <img src="images/picture-frame-by-velvet-armchair-removebg-preview 1.png" alt="Крісло">
-                    </div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        </section>
+            <div class="block_card block_card2">
+                <h2>Lamp Desk</h2>
+                <div class="card_btn">
+                    <hr class="Tophr_card">
+                    <a href="#">SHOP NOW</a>
+                    <hr class="bottomhr_card">
+                    <hr class="Lefthr_card">
+                    <hr class="righthr_card">
+                </div>
+                <div class="card_img card_desk">
+                    <img src="images/desk-lamp-marble-table 1.png" alt="Крісло">
+                </div>
+            </div>
+            <div class="block_card">
+                <h2>New Chair Collection 2022</h2>
+                <div class="card_btn">
+                    <hr class="Tophr_card">
+                    <a href="#">SHOP NOW</a>
+                    <hr class="bottomhr_card">
+                    <hr class="Lefthr_card">
+                    <hr class="righthr_card">
+                </div>
+                <div class="card_img">
+                    <img src="images/image-asset-removebg-preview 1.png" alt="Крісло">
+                </div>
+            </div>
+            <div class="block_card">
+                <h2>Modern Chair Collection 2022</h2>
+                <div class="card_btn">
+                    <hr class="Tophr_card">
+                    <a href="#">SHOP NOW</a>
+                    <hr class="bottomhr_card">
+                    <hr class="Lefthr_card">
+                    <hr class="righthr_card">
+                </div>
+                <div class="card_img">
+                    <img src="images/picture-frame-by-velvet-armchair-removebg-preview 1.png" alt="Крісло">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
 
         <section class="sec2">
             <div class="container2">
@@ -1261,13 +1279,14 @@
 
 
     
-        <section>
+        <section >
             <div class="form_footer">
                 <div>
                     <div class="logo_name">
                         <img src="images/logo.png" alt="">
                         <p class="int_p">interior</p>
                     </div>
+                <h2 class="text_form">Order form</h2>
                 </div>
                 <form id="order_form" action="orders_ajax.php" method="post" class="form_order">
                     <input type="text" id="name" name="name" required placeholder="Name"><br>
@@ -1308,6 +1327,27 @@
 <script
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       
 <script src="js/main.js"></script>
+<script>
+    let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("block_card");
+            if (n > slides.length - 2) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length - 2}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = slideIndex - 1; i < slideIndex + 2; i++) {
+                slides[i].style.display = "block";
+            }
+        }
+</script>
 </body>
 
 </html>

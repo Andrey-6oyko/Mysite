@@ -21,10 +21,19 @@
     margin-left: 0px;
 }
 
+.text_form{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
 
-.form_footer{
-    margin-top: 200px;
-    height: 441px;
+.form_footer {
+    width: 100%;
+    margin-top: 140px; /* Застосовуємо негативний вертикальний відступ */
+    height: 460px;
     background-color: #DDD7D1;
     border-radius: 100% 100% 0% 0%;
 }
@@ -68,3 +77,4 @@
     margin-right: 21px;
     text-decoration: none;
 }
+
